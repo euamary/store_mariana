@@ -8,3 +8,11 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+.error {
+  color: red;
+}
+
+.field_with_errors {
+  display: contents;
+}
+ 
