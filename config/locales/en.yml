@@ -29,6 +29,31 @@
 
 en:
   hello: "Hello world"
+  layout:
+    home: "Home"
+    log_out: "Log out"
   products:
     index:
       title: "Products"
+      new_product: "New Product"
+      login: "Login"
+    show:
+      back: "Back"
+      edit: "Edit"
+      delete: "Delete"
+      confirm_delete: "Are you sure?"
+    new:
+      title: "New Product"
+      cancel: "Cancel"
+    edit:
+      title: "Edit Product"
+      cancel: "Cancel"
+    form:
+      create_submit: "Create Product"
+      update_submit: "Update Product"
+  activerecord:
+    attributes:
+      product:
+        name: "Name"
+        description: "Description"
+        featured_image: "Featured image"

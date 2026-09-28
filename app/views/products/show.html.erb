@@ -4,8 +4,8 @@
     <%= image_tag @product.featured_image if @product.featured_image.attached? %>
 <% end %>
 
-<%= link_to "Back", products_path %>
+<%= link_to t(".back"), products_path %>
 <% if authenticated? %>
-    <%= link_to "Edit", edit_product_path(@product) %>
-    <%= button_to "Delete", @product, method: :delete, data: { turbo_confirm: "Are you sure?" } %>
+    <%= link_to t(".edit"), edit_product_path(@product) %>
+    <%= button_to t(".delete"), @product, method: :delete, data: { turbo_confirm: t(".confirm_delete") } %>
 <% end %>

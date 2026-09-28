@@ -1,0 +1,30 @@
+pt-BR:
+  hello: "Olá mundo"
+  layout:
+    home: "Início"
+    log_out: "Sair"
+  products:
+    index:
+      title: "Produtos"
+      new_product: "Novo produto"
+      login: "Entrar"
+    show:
+      back: "Voltar"
+      edit: "Editar"
+      delete: "Excluir"
+      confirm_delete: "Tem certeza?"
+    new:
+      title: "Novo produto"
+      cancel: "Cancelar"
+    edit:
+      title: "Editar produto"
+      cancel: "Cancelar"
+    form:
+      create_submit: "Criar produto"
+      update_submit: "Atualizar produto"
+  activerecord:
+    attributes:
+      product:
+        name: "Nome"
+        description: "Descrição"
+        featured_image: "Imagem de destaque"

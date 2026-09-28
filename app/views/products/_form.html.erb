@@ -19,6 +19,6 @@
     </div>
 
     <div>
-        <%= form.submit %>
+        <%= form.submit product.persisted? ? t(".update_submit") : t(".create_submit") %>
     </div>
 <% end %>
