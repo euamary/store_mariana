@@ -15,4 +15,10 @@
 .field_with_errors {
   display: contents;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
  
