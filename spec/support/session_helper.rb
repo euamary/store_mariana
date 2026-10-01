@@ -1,4 +1,4 @@
-module SessionTestHelper
+module SessionHelper
   def sign_in_as(user)
     Current.session = user.sessions.create!
 
@@ -7,13 +7,8 @@ module SessionTestHelper
       cookies["session_id"] = cookie_jar[:session_id]
     end
   end
-
-  def sign_out
-    Current.session&.destroy!
-    cookies.delete("session_id")
-  end
 end
 
-ActiveSupport.on_load(:action_dispatch_integration_test) do
-  include SessionTestHelper
+RSpec.configure do |config|
+  config.include SessionHelper, type: :request
 end
