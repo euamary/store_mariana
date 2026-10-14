@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
   allow_unauthenticated_access only: %i[ index show ]
   before_action :set_product, only: %i[ show edit update destroy ]
-  
+
   def index
     @products = Product.all
   end
@@ -29,9 +29,9 @@ class ProductsController < ApplicationController
   def update
      if @product.update(product_params)
       redirect_to @product
-    else
+     else
       render :edit, status: :unprocessable_entity
-    end
+     end
   end
 
   def destroy
