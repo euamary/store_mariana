@@ -1,9 +1,27 @@
 nav {
     display: flex;
     justify-content: flex-end;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 1rem;
     font-size: 0.875rem;
     max-width: 1024px;
     margin: 0 auto;
     padding: 1rem;
+    background-color: var(--color-primary);
+    border-radius: var(--radius);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav form button {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius);
+    cursor: pointer;
 }
