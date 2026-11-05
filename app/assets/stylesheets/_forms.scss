@@ -5,3 +5,40 @@
 .field_with_errors {
     display: contents;
 }
+
+.form-card {
+    max-width: 480px;
+    background-color: var(--color-surface);
+    border-radius: var(--radius);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.form-card > div {
+    margin-bottom: 1.25rem;
+}
+
+.form-card label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.form-card input[type="text"],
+.form-card input[type="email"],
+.form-card input[type="number"],
+.form-card input[type="file"],
+.form-card textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: var(--radius);
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.form-card trix-editor {
+    min-height: 120px;
+}

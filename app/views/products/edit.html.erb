@@ -1,4 +1,3 @@
 <h1><%= t ".title" %></h1>
 
-<%= render "form", product: @product %>
-<%= link_to t(".cancel"), @product %>
+<%= render "form", product: @product, cancel_path: @product %>
